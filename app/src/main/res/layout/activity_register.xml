@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    style="@style/AppTheme.NoActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/registe_tel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/phone"
+            android:hint="请输入你的手机号码"
+            android:inputType="text|none"
+            android:drawablePadding="15dp"
+            android:textColor="#708090"
+            android:textColorHint="#708090"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/registe_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/registe_tel"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/head"
+            android:hint="请输入你的用户名"
+            android:inputType="text|none"
+            android:textColor="#708090"
+            android:textColorHint="#708090"
+            android:drawablePadding="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/registe_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/registe_username"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="15dp"
+            android:hint="请输入您的密码"
+            android:inputType="text|none"
+            android:textColor="#708090"
+            android:textColorHint="#708090"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_registe"
+            style="@style/SmsButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/registe_password"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:text="注      册"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
